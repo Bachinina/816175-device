@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Ольга Бачинина](https://up.htmlacademy.ru/htmlcss/22/user/816175).
-* Наставник: [Евгений Соломеин] (https://htmlacademy.ru/profile/id164065).
+* Наставник: [Евгений Соломеин](https://htmlacademy.ru/profile/id164065).
 
 ---
 
