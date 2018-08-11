@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Девайс</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<header>
+		<a class="header__logo" href="index.html">
+			<img  src="" alt="DEVICE" width="" height="">
+		</a>
+		<div class="header__search"></div>
+
+		<ul class="header__user-account user-account">
+			<li><a class="header__user-account--name" href="#">Валентин Петухов</a></li>
+			<li><a class="header__user-account--exit" href="#">Выйти</a></li>
+		</ul>
+
+		<ul class="header__user-navigation">
+			<li><a class="header__user-navigation--compare" href="#">Сравнить</a></li>
+			<li><a class="header__user-navigation--basket" href="#">Корзина</a></li>
+		</ul>
+
+		<nav class="header__menu">
+			<div class="header__menu--catalog">
+				<span>Каталог товаров</span>
+				<ul>
+					<li><a href="#">Визуальная реальность</a></li>
+					<li><a href="#">Моноподы для селфи</a></li>
+					<li><a href="#">Экшн камеры</a></li>
+					<li><a href="#">Фитнес браслеты</a></li>
+					<li><a href="#">Умные часы</a></li>
+					<li><a href="#">Квадрокоптеры</a></li>
+				</ul>
+			</div>
+			<ul class="header__menu--navigation">
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Моноподы для селфи</h1>
+		<ul class="breadcrumbs">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="#">Каталог товаров</a></li>
+			<li class="breadcrumbs__current"><a>Моноподы для селфи</a></li>
+		</ul>
+		<section class="filters">
+			<h2>Фильтр:</h2>
+			<div class="filters__price">
+				<h3 class="filters__title">Стоимость</h3>
+				<label class="visually-hidden"for="filters__price--range">Стоимость</label>
+				<input class="filters__price--range" type="range" id="filters__price--range">
+			</div>
+			
+			<div class="filters__color">
+				<h3 class="filters__title">Цвет</h3>
+				<input class="filters__color--black" type="checkbox" id="filters__color--black"checked>
+					<label for="filters__color--black">Черный</label>
+				<input class="filters__color--white" type="checkbox" id="filters__color--white">
+					<label for="filters__color--white">Белый</label>
+				<input class="filters__color--blue" type="checkbox" id="filters__color--blue" checked>
+					<label for="filters__color--black">Синий</label>
+				<input class="filters__color--red" type="checkbox"  id="filters__color--red" checked>
+					<label for="filters__color--black">Красный</label>
+				<input class="filters__color--pink" type="checkbox" id="filters__color--pink">
+					<label for="filters__color--pink">Розовый</label>
+			</div>
+			
+			<div class="filters__bluetooth">
+				<h3 class="filters__title">Bluetooth</h3>
+				<input class="filters__bluetooth--yes" type="radio" id="filters__bluetooth--yes" checked>
+					<label for="filters__bluetooth--yes">Есть</label>
+				<input class="filters__bluetooth--no" type="radio" id="filters__bluetooth--no">
+					<label for="filters__bluetooth--no">Нет</label>
+			</div>
+		</section>
+		
+		<section class="sorting">
+			<h2>Сортировка:</h2>
+			<ul>
+				<li>По цене</li>
+				<li>По типу</li>
+				<li>По популярности</li>
+			</ul>
+		</section>
+		
+		<section class="products">
+			<ul class="products__list">
+				<li class="products__item">
+					<figure>
+						<img src="" alt="Любительская селфи-палка" width="" height="">
+						<figcaption>Любительская селфи-палка</figcaption>
+						<p class="products__item--price">500 руб.</p>
+					</figure>
+				</li>
+				<li class="products__item">
+					<figure>
+						<img src="" alt="Профессиональная селфи-палка" width="" height="">
+						<figcaption>Профессиональная селфи-палка</figcaption>
+						<p class="products__item--price">1 500 руб.</p>
+					</figure>
+				</li>
+				<li class="products__item">
+					<figure>
+						<img src="" alt="Непотопляемая селфи-палка" width="" height="">
+						<figcaption>Непотопляемая селфи-палка</figcaption>
+						<p class="products__item--price">2 500 руб.</p>
+					</figure>
+				</li>
+				<li class="products__item">
+					<figure>
+						<img src="" alt="Следуй за мной" width="" height="">
+						<figcaption>Селфи-палка "Следуй за мной"</figcaption>
+						<p class="products__item--price">4 900 руб.</p>
+					</figure>
+				</li>
+			</ul>
+			<div class="products__item--hover">
+				<button class="button">В корзину</button>
+			</div>
+		</section>
+		
+		<section class="paginator">
+			<ul class="paginator__list">
+				<li class="paginator__item"><a href="#">Назад</a></li>
+				<li class="paginator__item paginator__item--current"><a>1</a></li>
+				<li class="paginator__item"><a href="#">2</a></li>
+				<li class="paginator__item"><a href="#">3</a></li>
+				<li class="paginator__item"><a href="#">Вперед</a></li>
+			</ul>	
+		</section>
+		
+	<footer>
+		<a class="footer__logo">
+			<img  src="" alt="DEVICE" width="" height="">
+		</a>
+		<ul class="footer__user-account user-account">
+			<li><a class="footer__user-account--name" href="#">Валентин Петухов</a></li>
+			<li><a class="footer__user-account--exit" href="#">Выйти</a></li>
+		</ul>
+
+		<ul class="footer__user-navigation">
+			<li><a class="footer__user-navigation--compare" href="#">Сравнить</a></li>
+			<li><a class="footer__user-navigation--basket" href="#">Корзина</a></li>
+		</ul>
+		<p class="footer__address">г. Москва, ул. Строителей, 15</p>
+		<nav class="footer__menu">
+			<ul class="footer__menu--navigation">
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+		<p class="footer__phone">Тел.:+7(495)495-95-95</p>
+
+		<ul class="footer__social">
+			<li>
+				<a class="social__button social__button--fb" href="#">FaceBook</a>
+			</li>
+			<li>
+				<a class="social__button social__button--instagram" href="#">Instagram</a>
+			</li>
+			<li>
+				<a class="social__button social__button--twitter" href="#">Twitter</a>
+			</li>
+		</ul>
+		<a class="html-academy" href="https://htmlacademy.ru/">
+			<img src="" alt="HtmlAcademy" width="" height="">
+		</a>
+	</footer>
+	</main>
+	</body>
+</html>
+	
+
+
+
+
