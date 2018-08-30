@@ -210,16 +210,17 @@ a{
 }
 
 .button{
+	display: inline-block;
 	width: 220px;
 	height: 40px;
 	
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
-	vertical-align: middle;
-	text-align: center;
 	text-transform: uppercase;
-	line-height: 24px;
+	line-height: 40px;
 	letter-spacing: 3.7px;
+	text-align: center;
+	vertical-align: middle;
 	
 	color: rgba(0, 0, 0, 1);
 	background: linear-gradient(to bottom, transparent 40%, rgba(240, 197, 46, 1) 40%, rgba(240, 197, 46, 1) 60%, transparent 60%);
@@ -237,9 +238,6 @@ a{
 	background: rgba(240, 197, 46, 1);
 }
 
-a.button{
-	padding: 10px;
-}
 
 .slide__table{
 	display: table;
@@ -426,10 +424,6 @@ a.button{
 	display: none;
 }
 
-.active {
-	
-}
-
 .services__title,
 .info__title,
 .contacts__title {
@@ -476,6 +470,11 @@ a.button{
 
 .info__transport {
 	list-style: none;
+}
+
+.info__button,
+.contacts__button{
+	width:260px;
 }
 
 .info__link {
