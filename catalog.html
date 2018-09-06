@@ -11,246 +11,302 @@
 </head>
 
 <body>
-	<header class="header">
-		<a class="header__logo" href="index.html">
-			<img  src="img/header-logo.svg" alt="DEVICE" width="163" height="34">
-		</a>
-		
-		<ul class="header__user-navigation user-navigation">
-			<li class="user-navigation__item--header search">
-				<form class="search__form" action="https://echo.htmlacademy.ru" method="get">
-					<label class="search__label visually-hidden" for="search">Поиск по сайту</label>
-					<input class="search__input" type="search" id="search" placeholder="Поиск по сайту">
-					<button class="search__button" type="submit">Найти</button>
-				</form>
-			</li>
-			<li class="user-navigation__item--header user-navigation__item--header-account">
-				<a class="user-navigation__link--header user-navigation__link--header-name" href="#">Валентин Петухов</a>
-				<a class="user-navigation__link--header user-navigation__link--header-exit" href="#">Выйти</a>
-			</li>
-			<li class="user-navigation__item--header">
-				<a class="user-navigation__link--header user-navigation__link--header-compare" href="#">Сравнить</a>
-			</li>
-			<li class="user-navigation__item--header">
-				<a class="user-navigation__link--header user-navigation__link--header-basket" href="#">Корзина</a>
-			</li>
-		</ul>
+	<header class="header container">
+	  <div class="wrapper">
+      <a class="header__logo" href="index.html">
+        <img  src="img/header-logo.svg" alt="DEVICE" width="163" height="34">
+      </a>
 
-		<nav class="header__main-menu main-menu">
-			<ul class="main-menu__list">
-				<li class="main-menu__item main-menu__item--catalog"><a class="main-menu__link" href="#">Каталог товаров</a>
-					<ul class="main-menu__catalog catalog">
-						<li class="catalog__item"><a class="catalog__link" href="#">Визуальная реальность</a></li>
-						<li class="catalog__item"><a class="catalog__link" href="#">Моноподы для селфи</a></li>
-						<li class="catalog__item"><a class="catalog__link" href="#">Экшн камеры</a></li>
-						<li class="catalog__item"><a class="catalog__link" href="#">Фитнес браслеты</a></li>
-						<li class="catalog__item"><a class="catalog__link" href="#">Умные часы</a></li>
-						<li class="catalog__item"><a class="catalog__link" href="#">Квадрокоптеры</a></li>
-					</ul>
-				</li>
-				<li class="main-menu__item"><a class="main-menu__link" href="#">Доставка</a></li>
-				<li class="main-menu__item"><a class="main-menu__link" href="#">Гарантия</a></li>
-				<li class="main-menu__item"><a class="main-menu__link" href="#">Контакты</a></li>
-			</ul>
-		</nav>
+      <ul class="header__user-navigation user-navigation">
+        <li class="user-navigation__item--header search">
+          <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="search__label visually-hidden" for="search">Поиск по сайту</label>
+            <input class="search__input" type="search" id="search" placeholder="Поиск по сайту">
+            <button class="search__button" type="submit">Найти</button>
+          </form>
+        </li>
+        <li class="user-navigation__item user-navigation__item--header user-navigation__item--header-account">
+          <a class="user-navigation__link--header user-navigation__link--header-name" href="#">Валентин Петухов</a>
+          <a class="user-navigation__link--header user-navigation__link--header-exit" href="#">Выйти</a>
+        </li>
+        <li class="user-navigation__item user-navigation__item--header user-navigation__item--header-compare">
+          <a class="user-navigation__link--header user-navigation__link--header-compare" href="#">Сравнить</a>
+        </li>
+        <li class="user-navigation__item user-navigation__item--header user-navigation__item--header-basket">
+          <a class="user-navigation__link--header user-navigation__link--header-basket" href="#">Корзина</a>
+        </li>
+      </ul>
+
+      <nav class="header__main-menu main-menu">
+          <ul class="main-menu__list">
+          <li class="main-menu__item main-menu__item--catalog">
+            <a class="main-menu__link" href="#">Каталог товаров</a>
+            <div class="wrapper--menu-catalog">
+              <ul class="main-menu__catalog catalog">
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">Виртуальная реальность</a>
+                  <a class="catalog__link" href="#">Моноподы для селфи</a>
+                  <a class="catalog__link" href="#">Экшн камеры</a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">Фитнес браслеты</a>
+                  <a class="catalog__link" href="#">Умные часы</a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-menu__item main-menu__item--delivery"> 
+            <a class="main-menu__link" href="#">Доставка</a>
+          </li>
+          <li class="main-menu__item main-menu__item--warranty">
+            <a class="main-menu__link" href="#">Гарантия</a>
+          </li>
+          <li class="main-menu__item main-menu__item--contacts">
+            <a class="main-menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 	</header>
 	
 	<main>
-		<h1 class="page__title">Моноподы для селфи</h1>
-		<ul class="breadcrumbs">
-			<li class="breadcrumbs__item breadcrumbs__item--main">
-				<a class="breadcrumbs__link" href="index.html">Главная</a>
-			</li>
-			<li class="breadcrumbs__item">
-				<a class="breadcrumbs__link" href="#">Каталог товаров</a>
-			</li>
-			<li class="breadcrumbs__item">
-				<a class="breadcrumbs__link breadcrumbs__link--current">Моноподы для селфи</a>
-			</li>
-		</ul>
+	  <div class="container">
+      <div class="wrapper">
+        <h1 class="page__title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item breadcrumbs__item--main">
+            <a class="breadcrumbs__link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 		
-		<section class="filters">
-			<h2 class="filters__title">Фильтр:</h2>
-			<form class="filters__form " action="https://echo.htmlacademy.ru" method="get">
-				<fieldset class="filter-price filter">
-					<legend class="visually-hidden">Стоимость</legend>
-					<h3 class="filter__title">Стоимость</h3>
-					<label class="filter__label visually-hidden" for="filter-price">Стоимость</label>
-					<input class="filter__input filter__input--range" type="range" id="filter-price">
-				</fieldset>
-				
-				<fieldset class="filter-color filter">
-					<legend class="visually-hidden">Цвет</legend>
-					<h3 class="filter__title">Цвет</h3>
-					<ul class="filter__list">
-						<li class="filter__item">
-								<input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="color" id="black" checked>
-								<label class="filter__label" for="black">Черный</label>
-						</li>
-						<li class="filter__item">
-								<input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="color" id="white">
-								<label class="filter__label" for="white">Белый</label>
-						</li>
-						<li class="filter__item">
-								<input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="color" id="blue" checked>
-								<label class="filter__label" for="blue">Синий</label>
-						</li>
-						<li class="filter__item">
-								<input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="color" id="red" checked>
-								<label class="filter__label" for="red">Красный</label>
-						</li>
-						<li class="filter__item">
-								<input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="color" id="pink">
-								<label class="filter__label" for="pink">Розовый</label>
-						</li>
-					</ul>
-				</fieldset>
-				
-				<fieldset class="filter filter-bluetooth">
-					<label class="visually-hidden">Bluetooth</label>
-					<h3 class="filter__title">Bluetooth</h3>
-					<ul class="filter__list">
-						<li class="filter__item">
-							<input class="filter__input filter__input--radio visually-hidden" type="radio" name="bluetooth" value="yes" id="bluetooth--yes" checked>
-							<label class="filter__label" for="bluetooth--yes">Есть</label>
-						</li>
-						<li class="filter__item">
-							<input class="filter__input filter__input--radio visually-hidden" type="radio" name="bluetooth" value="no" id="bluetooth--no">
-							<label class="filter__label" for="bluetooth--no">Нет</label>
-						</li>
-					</ul>
-				</fieldset>
-				<button class="button filters__button" type="submit">Показать</button>
-			</form>
-		</section>
+    
+    <div class="big-container big-container--selection">
+      <div class="container container--selection">
+        <div class="wrapper wrapper--selection">
+          <div class="container--title">
+            <span class="filters__title">Фильтр:</span> <!-- Помещен для стилизации-->
+          </div>
+          <section class="sorting">
+            <h2 class="sorting__title">Сортировка:</h2>
+            <ul class="sorting__list">
+              <li class="sorting__item sorting__item--price">
+                <a class="sorting__link" href="#">По цене</a>
+              </li>
+              <li class="sorting__item sorting__item--type">
+                <a class="sorting__link" href="#">По типу</a>
+              </li>
+              <li class="sorting__item sorting__item--fame">
+                <a class="sorting__link" href="#">По популярности</a>
+              </li>
+            </ul>
+            <a class="sorting__gradation sorting__gradation--min"></a>
+            <a class="sorting__gradation sorting__gradation--max"></a>
+          </section>
+        </div>
+      </div>
+    </div>
 
-		<section class="sorting">
-			<h2 class="sorting__title">Сортировка:</h2>
-			<ul class="sorting__list">
-				<li class="sorting__item sorting__item--price">
-					<a class="sorting__link" href="#">По цене</a>
-				</li>
-				<li class="sorting__item sorting__item--type">
-					<a class="sorting__link" href="#">По типу</a>
-				</li>
-				<li class="sorting__item sorting__item--fame">
-					<a class="sorting__link" href="#">По популярности</a>
-				</li>
-			</ul>
-		</section>
-		
-		<section class="products">
-		<h2 class="visually-hidden">Товары</h2>
-			<ul class="products__list">
-				<li class="products__item">
-          <img src="img/catalog-item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-          <a class="products__link" href="#">
-            <span class="products__title">Любительская селфи-палка</span>
-            <p class="products__price">500 руб.</p>
-          </a>
-          <div class="products__item--hover visually-hidden">
-            <a class="button products__button">В корзину</a>
-            <a class="products__compare">Добавить к сравнению</a>
-          </div>
-				</li>
-				<li class="products__item">
-          <img src="img/catalog-item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-          <a class="products__link" href="#">
-            <span class="products__title">Профессиональная селфи-палка</span>
-            <p class="products__price">1 500 руб.</p>
-          </a>
-          <div class="products__item--hover visually-hidden">
-            <a class="button products__button">В корзину</a>
-            <a class="products__compare">Добавить к сравнению</a>
-          </div>
-				</li>
-				<li class="products__item">
-          <img src="img/catalog-item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-          <a class="products__link" href="#">
-            <span class="products__title">Непотопляемая селфи-палка</span>
-            <p class="products__price">2 500 руб.</p>
-          </a>
-          <div class="products__item--hover visually-hidden">
-            <a class="button products__button">В корзину</a>
-            <a class="products__compare">Добавить к сравнению</a>
-          </div>
-				</li>
-				<li class="products__item">
-          <img src="img/catalog-item-4.jpg" alt="Следуй за мной" width="360" height="380">
-          <a class="products__link" href="#">
-            <span class="products__title">Селфи-палка "Следуй за мной"</span>
-            <p class="products__price">4 900 руб.</p>
-          </a>
-          <div class="products__item--hover visually-hidden">
-            <a class="button products__button">В корзину</a>
-            <a class="products__compare">Добавить к сравнению</a>
-          </div>
-				</li>
-			</ul>
-		</section>
-		
-		<section class="paginator">
-		<h2 class="visually-hidden">Страницы</h2>
-			<ul class="paginator__list">
-				<li class="paginator__item">
-					<a class="paginator__link paginator__link--back" href="#">Назад</a>
-				</li>
-				<li class="paginator__item paginator__item--current">
-					<a class="paginator__link paginator__link--current">1</a>
-				</li>
-				<li class="paginator__item">
-					<a class="paginator__link" href="#">2</a>
-				</li>
-				<li class="paginator__item">
-					<a class="paginator__link" href="#">3</a>
-				</li>
-				<li class="paginator__item">
-					<a class="paginator__link paginator__link--next" href="#">Вперед</a>
-				</li>
-			</ul>	
-		</section>
-		
-	<footer class="footer">
-		<a class="footer__logo" href="index.html">
-			<img  src="img/footer-logo.svg" alt="DEVICE" width="162" height="34">
-		</a>
-		<ul class="footer__user-navigation user-navigation">
-			<li class="user-navigation__item--footer user-navigation__item--footer-account">
-				<a class="user-navigation__link--footer user-navigation__link--footer-name" href="#">Валентин Петухов</a>
-				<a class="user-navigation__link--footer user-navigation__link--footer-exit" href="#">Выйти</a>
-			</li>
-			<li class="user-navigation__item--footer">
-				<a class="user-navigation__link--footer user-navigation__link--footer-compare" href="#">Сравнить</a>
-			</li>
-			<li class="user-navigation__item--footer">
-				<a class="user-navigation__link--footer user-navigation__link--footer-basket" href="#">Корзина</a>
-			</li>
-		</ul>
-	
-		<p class="footer__address">г. Москва, ул. Строителей, 15</p>
-		<ul class="footer__menu menu">
-			<li class="menu__item"><a class="menu__link" href="#">Доставка</a></li>
-			<li class="menu__item"><a class="menu__link" href="#">Гарантия</a></li>
-			<li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
-		</ul>
-		<p class="footer__phone">Тел.:+7(495)495-95-95</p>
+    <div class="big-container big-container--catalog">
+      <div class="container">
+        <div class="wrapper wrapper--catalog">
+          <section class="filters">
+            <h2 class="visually-hidden">Фильтр:</h2>
+            <form class="filters__form filter__container" action="https://echo.htmlacademy.ru" method="get">
+              <fieldset class="filter-price filter">
+                <legend class="visually-hidden">Стоимость</legend>
+                <h3 class="filter__title">Стоимость</h3>
+                <label class="filter__label visually-hidden" for="filter-price">Стоимость</label>
+                <input class="filter__input filter__input--range" type="range" id="filter-price">
+              </fieldset>
 
-		<ul class="footer__social social">
-			<li class="social__item">
-				<a class="social__button social__button--fb" href="#" aria-label="Присоединяйтесь к нам на Фейсбуке!">FaceBook</a>
-			</li>
-			<li class="social__item">
-				<a class="social__button social__button--instagram" href="#" aria-label="Присоединяйтесь к нам в Инстаграме!">Instagram</a>
-			</li>
-			<li class="social__item">
-				<a class="social__button social__button--twitter" href="#" aria-label="Присоединяйтесь к нам в Твиттере!">Twitter</a>
-			</li>
-		</ul>
-		<a class="footer__copyright" href="https://htmlacademy.ru/" aria-label="Сайт разработан HTML-академией">
-			<img src="img/footer-copyright-html.svg" alt="HTML-академия" width="27" height="35">
-		</a>
-	</footer>
-	</main>
-	</body>
+              <fieldset class="filter-color filter">
+                <legend class="visually-hidden">Цвет</legend>
+                <h3 class="filter__title">Цвет</h3>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                      <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="color" value="black" id="black" checked>
+                      <label class="filter__label" for="black">Черный</label>
+                  </li>
+                  <li class="filter__item">
+                      <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="color" value="white" id="white">
+                      <label class="filter__label" for="white">Белый</label>
+                  </li>
+                  <li class="filter__item">
+                      <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="color" value="blue" id="blue" checked>
+                      <label class="filter__label" for="blue">Синий</label>
+                  </li>
+                  <li class="filter__item">
+                      <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="color" value="red" id="red" checked>
+                      <label class="filter__label" for="red">Красный</label>
+                  </li>
+                  <li class="filter__item">
+                      <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="color" value="pink" id="pink">
+                      <label class="filter__label" for="pink">Розовый</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="filter filter-bluetooth">
+                <label class="visually-hidden">Bluetooth</label>
+                <h3 class="filter__title">Bluetooth</h3>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <input class="filter__input filter__input--radio visually-hidden" type="radio" name="bluetooth" value="yes" id="bluetooth--yes" checked>
+                    <label class="filter__label" for="bluetooth--yes">Есть</label>
+                  </li>
+                  <li class="filter__item">
+                    <input class="filter__input filter__input--radio visually-hidden" type="radio" name="bluetooth" value="no" id="bluetooth--no">
+                    <label class="filter__label" for="bluetooth--no">Нет</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="button filters__button" type="submit">Показать</button>
+            </form>
+          </section>
+
+          <div class="container--products">
+            <section class="products">
+            <h2 class="visually-hidden">Товары</h2>
+              <ul class="products__list">
+                <li class="products__item">
+                  <img class="products__img" src="img/catalog-item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                  <a class="products__link" href="#">
+                    <span class="products__title">Любительская селфи-палка</span>
+                    <span class="products__price">500 руб.</span>
+                  </a>
+                  <div class="products__item--hover visually-hidden">
+                    <a class="button products__button">В корзину</a>
+                    <a class="products__compare">Добавить к сравнению</a>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <img class="products__img" src="img/catalog-item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+                  <a class="products__link" href="#">
+                 <span class="products__title">Профессиональная <br>селфи-палка</span>   <!-- Использование тега <br> обусловлено тем, что последнее слово в строке "селфи-палка" переносится по дефису, а символ-дефис &#8209; из Unicode, запрещающий перенос, стилизовать под текст нельзя-->
+                    <span class="products__price">1 500 руб.</span>
+                  </a>
+                  <div class="products__item--hover visually-hidden">
+                    <a class="button products__button">В корзину</a>
+                    <a class="products__compare">Добавить к сравнению</a>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <img class="products__img" src="img/catalog-item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+                  <a class="products__link" href="#">
+                    <span class="products__title">Непотопляемая селфи-палка</span>
+                    <span class="products__price">2 500 руб.</span>
+                  </a>
+                  <div class="products__item--hover visually-hidden">
+                    <a class="button products__button">В корзину</a>
+                    <a class="products__compare">Добавить к сравнению</a>
+                  </div>
+                </li>
+                <li class="products__item">
+                  <img class="products__img" src="img/catalog-item-4.jpg" alt="Следуй за мной" width="360" height="380">
+                  <a class="products__link" href="#">
+                    <span class="products__title">Селфи-палка "Следуй за мной"</span>
+                    <span class="products__price">4 900 руб.</span>
+                  </a>
+                  <div class="products__item--hover visually-hidden">
+                    <a class="button products__button">В корзину</a>
+                    <a class="products__compare">Добавить к сравнению</a>
+                  </div>
+                </li>
+              </ul>
+              
+              <div class="paginator">
+              <h2 class="visually-hidden">Страницы</h2>
+                <ul class="paginator__list">
+                  <li class="paginator__item paginator__item--back">
+                    <a class="paginator__link paginator__link--back" href="#">Назад</a>
+                  </li>
+                  <li class="paginator__item paginator__item--pages">
+                    <ul class="pages">
+                      <li class="pages__item">
+                        <a class="paginator__link paginator__link--current">1</a>
+                      </li>
+                      <li class="pages__item">
+                        <a class="paginator__link" href="#">2</a>
+                      </li>
+                      <li class="pages__item">
+                        <a class="paginator__link" href="#">3</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="paginator__item paginator__item--next">
+                    <a class="paginator__link paginator__link--next" href="#">Вперед</a>
+                  </li>
+                </ul>	
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+		
+	<footer class="footer footer--catalog">
+	  <div class="container">
+      <div class="footer__top">
+        <a class="footer__logo">
+          <img  src="img/footer-logo.svg" alt="DEVICE" width="162" height="34">
+        </a>
+        <ul class="footer__user-navigation user-navigation">
+          <li class="user-navigation__item user-navigation__item--footer user-navigation__item--footer-account">
+            <a class="user-navigation__link--footer user-navigation__link--footer-name" href="#">Валентин Петухов</a>
+            <span class="user-navigation__link--footer user-navigation__link--footer-exit">
+              <a class="user-navigation__link--footer user-navigation__link--footer-exit" href="#">Выйти</a>
+            </span>
+          </li>
+          <li class="user-navigation__item user-navigation__item--footer user-navigation__item--footer-compare">
+            <a class="user-navigation__link--footer user-navigation__link--footer-compare" href="#">Сравнить</a>
+          </li>
+          <li class="user-navigation__item user-navigation__item--footer user-navigation__item--footer-basket">
+            <a class="user-navigation__link--footer user-navigation__link--footer-basket" href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__middle">
+        <p class="footer__address">г. Москва, ул. Строителей, 15</p>
+        <ul class="footer__menu menu">
+          <li class="menu__item"><a class="menu__link" href="#">Доставка</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Гарантия</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+        </ul>
+        <p class="footer__phone">Тел.:+7(495)495-95-95</p>
+      </div>
+
+      <div class="footer__bottom">
+        <ul class="footer__social">
+          <li class="social__item">
+            <a class="social__button social__button--fb" href="#" aria-label="Присоединяйтесь к нам на Фейсбуке!">FaceBook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__button social__button--instagram" href="#" aria-label="Присоединяйтесь к нам в Инстаграме!">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__button social__button--twitter" href="#" aria-label="Присоединяйтесь к нам в Твиттере!">Twitter</a>
+          </li>
+        </ul>
+        <a class="footer__copyright" href="https://htmlacademy.ru/" aria-label="Сайт разработан HTML-академией">
+          <img src="img/footer-copyright-html.svg" alt="HTML-академия" width="27" height="35">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
 	
