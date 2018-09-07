@@ -13,8 +13,9 @@
 <body>
 	<header class="header container">
 	  <div class="wrapper">
+      <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
       <a class="header__logo" href="index.html">
-        <img  src="img/header-logo.svg" alt="DEVICE" width="163" height="34">
+        <img  src="img/header-logo.svg" alt="DEVICE" width="164" height="36">
       </a>
 
       <ul class="header__user-navigation user-navigation">
@@ -41,7 +42,7 @@
           <ul class="main-menu__list">
           <li class="main-menu__item main-menu__item--catalog">
             <a class="main-menu__link" href="#">Каталог товаров</a>
-            <div class="wrapper--menu-catalog">
+            <div class="wrapper wrapper--menu-catalog">
               <ul class="main-menu__catalog catalog">
                 <li class="catalog__item">
                   <a class="catalog__link" href="#">Виртуальная реальность</a>
@@ -101,7 +102,7 @@
             <h2 class="sorting__title">Сортировка:</h2>
             <ul class="sorting__list">
               <li class="sorting__item sorting__item--price">
-                <a class="sorting__link" href="#">По цене</a>
+                <a class="sorting__link active-link" href="#">По цене</a>
               </li>
               <li class="sorting__item sorting__item--type">
                 <a class="sorting__link" href="#">По типу</a>
@@ -110,8 +111,14 @@
                 <a class="sorting__link" href="#">По популярности</a>
               </li>
             </ul>
-            <a class="sorting__gradation sorting__gradation--min"></a>
-            <a class="sorting__gradation sorting__gradation--max"></a>
+            <div class="sorting__gradation gradation">
+              <a class="gradation__link gradation__link--min" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
+              </a>
+              <a class="gradation__link gradation__link--max active-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+              </a>
+            </div>
           </section>
         </div>
       </div>
@@ -185,7 +192,7 @@
                     <span class="products__title">Любительская селфи-палка</span>
                     <span class="products__price">500 руб.</span>
                   </a>
-                  <div class="products__item--hover visually-hidden">
+                  <div class="products__item--hover">
                     <a class="button products__button">В корзину</a>
                     <a class="products__compare">Добавить к сравнению</a>
                   </div>
@@ -196,7 +203,7 @@
                  <span class="products__title">Профессиональная <br>селфи-палка</span>   <!-- Использование тега <br> обусловлено тем, что последнее слово в строке "селфи-палка" переносится по дефису, а символ-дефис &#8209; из Unicode, запрещающий перенос, стилизовать под текст нельзя-->
                     <span class="products__price">1 500 руб.</span>
                   </a>
-                  <div class="products__item--hover visually-hidden">
+                  <div class="products__item--hover">
                     <a class="button products__button">В корзину</a>
                     <a class="products__compare">Добавить к сравнению</a>
                   </div>
@@ -207,7 +214,7 @@
                     <span class="products__title">Непотопляемая селфи-палка</span>
                     <span class="products__price">2 500 руб.</span>
                   </a>
-                  <div class="products__item--hover visually-hidden">
+                  <div class="products__item--hover">
                     <a class="button products__button">В корзину</a>
                     <a class="products__compare">Добавить к сравнению</a>
                   </div>
@@ -215,10 +222,10 @@
                 <li class="products__item">
                   <img class="products__img" src="img/catalog-item-4.jpg" alt="Следуй за мной" width="360" height="380">
                   <a class="products__link" href="#">
-                    <span class="products__title">Селфи-палка "Следуй за мной"</span>
+                    <span class="products__title">Селфи-палка «Следуй за мной»</span>
                     <span class="products__price">4 900 руб.</span>
                   </a>
-                  <div class="products__item--hover visually-hidden">
+                  <div class="products__item--hover">
                     <a class="button products__button">В корзину</a>
                     <a class="products__compare">Добавить к сравнению</a>
                   </div>
@@ -231,18 +238,14 @@
                   <li class="paginator__item paginator__item--back">
                     <a class="paginator__link paginator__link--back" href="#">Назад</a>
                   </li>
-                  <li class="paginator__item paginator__item--pages">
-                    <ul class="pages">
-                      <li class="pages__item">
-                        <a class="paginator__link paginator__link--current">1</a>
-                      </li>
-                      <li class="pages__item">
-                        <a class="paginator__link" href="#">2</a>
-                      </li>
-                      <li class="pages__item">
-                        <a class="paginator__link" href="#">3</a>
-                      </li>
-                    </ul>
+                  <li class="paginator__item paginator__item--page">
+                    <a class="paginator__link paginator__link--current">1</a>
+                  </li>
+                  <li class="paginator__item paginator__item--page">
+                    <a class="paginator__link" href="#">2</a>
+                  </li>
+                  <li class="paginator__item paginator__item--page">
+                    <a class="paginator__link" href="#">3</a>
                   </li>
                   <li class="paginator__item paginator__item--next">
                     <a class="paginator__link paginator__link--next" href="#">Вперед</a>
@@ -285,7 +288,7 @@
           <li class="menu__item"><a class="menu__link" href="#">Гарантия</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
         </ul>
-        <p class="footer__phone">Тел.:+7(495)495-95-95</p>
+        <p class="footer__phone">Тел. :+7(495)495-95-95</p>
       </div>
 
       <div class="footer__bottom">
