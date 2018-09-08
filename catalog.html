@@ -6,8 +6,7 @@
 	<title>HTML Academy: Девайс</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	
+	<link href="css/main.css" rel="stylesheet">	
 </head>
 
 <body>
@@ -130,14 +129,27 @@
           <section class="filters">
             <h2 class="visually-hidden">Фильтр:</h2>
             <form class="filters__form filter__container" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset class="filter-price filter">
+              <fieldset class="filter filter-price ">
                 <legend class="visually-hidden">Стоимость</legend>
                 <h3 class="filter__title">Стоимость</h3>
-                <label class="filter__label visually-hidden" for="filter-price">Стоимость</label>
-                <input class="filter__input filter__input--range" type="range" id="filter-price">
+                <div class="filter-price__range">
+                  <div class="range">
+                    <div class="range__scale">
+                      <div class="range__bar"></div>
+                    </div>
+                    <div class="range__control range__control--min"></div>
+                    <div class="range__control range__control--max"></div>
+                  </div>
+                  <div class="filter-price__price">
+                    <label class="visually-hidden" for="min-price">Цена от</label>
+                    <input class="filter-price__input filter-price__input--min" name="min-price" type="text" id="min-price" value="от 0">
+                    <label class="visually-hidden" for="max-price">Цена от</label>
+                    <input class="filter-price__input filter-price__input--max" name="max-price" type="text" id="max-price" value="до 5000">
+                  </div>
+                </div>
               </fieldset>
 
-              <fieldset class="filter-color filter">
+              <fieldset class="filter filter-color ">
                 <legend class="visually-hidden">Цвет</legend>
                 <h3 class="filter__title">Цвет</h3>
                 <ul class="filter__list">
@@ -219,7 +231,7 @@
                     <a class="products__compare">Добавить к сравнению</a>
                   </div>
                 </li>
-                <li class="products__item">
+                <li class="products__item new">
                   <img class="products__img" src="img/catalog-item-4.jpg" alt="Следуй за мной" width="360" height="380">
                   <a class="products__link" href="#">
                     <span class="products__title">Селфи-палка «Следуй за мной»</span>
@@ -268,7 +280,7 @@
         <ul class="footer__user-navigation user-navigation">
           <li class="user-navigation__item user-navigation__item--footer user-navigation__item--footer-account">
             <a class="user-navigation__link--footer user-navigation__link--footer-name" href="#">Валентин Петухов</a>
-            <span class="user-navigation__link--footer user-navigation__link--footer-exit">
+            <span class="user-navigation__link--footer user-navigation__link--footer-exit"> <!-- для стилизации-->
               <a class="user-navigation__link--footer user-navigation__link--footer-exit" href="#">Выйти</a>
             </span>
           </li>
