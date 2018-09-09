@@ -13,9 +13,9 @@
   <header class="header container">
     <div class="wrapper">
       <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
-      <a class="header__logo" href="index.html">
-  <img  src="img/header-logo.svg" alt="DEVICE" width="164" height="36">
-  </a>
+      <a href="index.html" aria-label="Перейти на главную страницу">
+        <img class="header__logo"src="img/header-logo.svg" alt="DEVICE" width="164" height="36">
+      </a>
 
       <ul class="header__user-navigation user-navigation">
         <li class="user-navigation__item--header search">
@@ -26,14 +26,14 @@
           </form>
         </li>
         <li class="user-navigation__item user-navigation__item--header user-navigation__item--header-account">
-          <a class="user-navigation__link--header user-navigation__link--header-name" href="#">Валентин Петухов</a>
-          <a class="user-navigation__link--header user-navigation__link--header-exit" href="#">Выйти</a>
+          <a class="user-navigation__link--header user-navigation__link--header-name" href="#" aria-label="Перейти в личный профиль">Валентин Петухов</a>
+          <a class="user-navigation__link--header user-navigation__link--header-exit" href="#" aria-label="Выйти из личного кабинета">Выйти</a>
         </li>
         <li class="user-navigation__item user-navigation__item--header user-navigation__item--header-compare">
-          <a class="user-navigation__link--header user-navigation__link--header-compare" href="#">Сравнить</a>
+          <a class="user-navigation__link--header user-navigation__link--header-compare" href="#" aria-label="Сравнить товары">Сравнить</a>
         </li>
         <li class="user-navigation__item user-navigation__item--header user-navigation__item--header-basket">
-          <a class="user-navigation__link--header user-navigation__link--header-basket" href="#">Корзина</a>
+          <a class="user-navigation__link--header user-navigation__link--header-basket" href="#" aria-label="Перейти в корзину">Корзина</a>
         </li>
       </ul>
 
@@ -78,10 +78,10 @@
         <h1 class="page__title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item breadcrumbs__item--main">
-            <a class="breadcrumbs__link" href="index.html">Главная</a>
+            <a class="breadcrumbs__link" href="index.html" aria-label="Перейти на главную страницу">Главная</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+            <a class="breadcrumbs__link" href="#" aria-label="Перейти в каталог товаров">Каталог товаров</a>
           </li>
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link breadcrumbs__link--current">Моноподы для селфи</a>
@@ -95,27 +95,26 @@
       <div class="container container--selection">
         <div class="wrapper wrapper--selection">
           <div class="container--title">
-            <span class="filters__title">Фильтр:</span>
-            <!-- Помещен для стилизации-->
+            <span class="filters__title">Фильтр:</span> <!-- Помещен для стилизации-->
           </div>
           <section class="sorting">
             <h2 class="sorting__title">Сортировка:</h2>
             <ul class="sorting__list">
               <li class="sorting__item sorting__item--price">
-                <a class="sorting__link active-link" href="#">По цене</a>
+                <a class="sorting__link active-link" href="#" aria-label="Отсортировать товары по цене">По цене</a>
               </li>
               <li class="sorting__item sorting__item--type">
-                <a class="sorting__link" href="#">По типу</a>
+                <a class="sorting__link" href="#" aria-label="Отсортировать товары по типу">По типу</a>
               </li>
               <li class="sorting__item sorting__item--fame">
-                <a class="sorting__link" href="#">По популярности</a>
+                <a class="sorting__link" href="#" aria-label="Отсортировать товары по популярности">По популярности</a>
               </li>
             </ul>
             <div class="sorting__gradation gradation">
-              <a class="gradation__link gradation__link--min" href="#">
+              <a class="gradation__link gradation__link--min" href="#" aria-label="Отсортировать по возрастанию">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
               </a>
-              <a class="gradation__link gradation__link--max active-link" href="#">
+              <a class="gradation__link gradation__link--max active-link" href="#" aria-label="Отсортировать по убыванию">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
               </a>
             </div>
@@ -144,7 +143,7 @@
                   <div class="filter-price__price">
                     <label class="visually-hidden" for="min-price">Цена от</label>
                     <input class="filter-price__input filter-price__input--min" name="min-price" type="text" id="min-price" value="от 0">
-                    <label class="visually-hidden" for="max-price">Цена от</label>
+                    <label class="visually-hidden" for="max-price">Цена до</label>
                     <input class="filter-price__input filter-price__input--max" name="max-price" type="text" id="max-price" value="до 5000">
                   </div>
                 </div>
@@ -191,7 +190,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="button filters__button" type="submit">Показать</button>
+              <button class="button filters__button" type="submit" aria-label="Отфильтровать товары">Показать</button>
             </form>
           </section>
 
@@ -206,8 +205,8 @@
                     <span class="products__price">500 руб.</span>
                   </a>
                   <div class="products__item--hover">
-                    <a class="button products__button">В корзину</a>
-                    <a class="products__compare">Добавить к сравнению</a>
+                    <a class="button products__button" aria-label="Добавить товар в корзину">В корзину</a>
+                    <a class="products__compare" aria-label="Добавить товар к сравнению">Добавить к сравнению</a>
                   </div>
                 </li>
                 <li class="products__item">
@@ -217,8 +216,8 @@
                     <span class="products__price">1 500 руб.</span>
                   </a>
                   <div class="products__item--hover">
-                    <a class="button products__button">В корзину</a>
-                    <a class="products__compare">Добавить к сравнению</a>
+                    <a class="button products__button" aria-label="Добавить товар в корзину">В корзину</a>
+                    <a class="products__compare" aria-label="Добавить товар к сравнению">Добавить к сравнению</a>
                   </div>
                 </li>
                 <li class="products__item">
@@ -228,8 +227,8 @@
                     <span class="products__price">2 500 руб.</span>
                   </a>
                   <div class="products__item--hover">
-                    <a class="button products__button">В корзину</a>
-                    <a class="products__compare">Добавить к сравнению</a>
+                    <a class="button products__button" aria-label="Добавить товар в корзину">В корзину</a>
+                    <a class="products__compare" aria-label="Добавить товар к сравнению">Добавить к сравнению</a>
                   </div>
                 </li>
                 <li class="products__item new">
@@ -239,8 +238,8 @@
                     <span class="products__price">4 900 руб.</span>
                   </a>
                   <div class="products__item--hover">
-                    <a class="button products__button">В корзину</a>
-                    <a class="products__compare">Добавить к сравнению</a>
+                    <a class="button products__button" aria-label="Добавить товар в корзину">В корзину</a>
+                    <a class="products__compare" aria-label="Добавить товар к сравнению">Добавить к сравнению</a>
                   </div>
                 </li>
               </ul>
@@ -275,21 +274,19 @@
   <footer class="footer footer--catalog">
     <div class="container">
       <div class="footer__top">
-        <a class="footer__logo">
-          <img  src="img/footer-logo.svg" alt="DEVICE" width="162" height="34">
+        <a href="index.html">
+          <img class="footer__logo" src="img/footer-logo.svg" alt="DEVICE" width="163" height="35">
         </a>
         <ul class="footer__user-navigation user-navigation">
           <li class="user-navigation__item user-navigation__item--footer user-navigation__item--footer-account">
-            <a class="user-navigation__link--footer user-navigation__link--footer-name" href="#">Валентин Петухов</a>
-            <span class="user-navigation__link--footer user-navigation__link--footer-exit"> <!-- для стилизации-->
-              <a class="user-navigation__link--footer user-navigation__link--footer-exit" href="#">Выйти</a>
-            </span>
+            <a class="user-navigation__link--footer user-navigation__link--footer-name" href="#" aria-label="Перейти в личный профиль">Валентин Петухов</a>
+            <a class="user-navigation__link--footer user-navigation__link--footer-exit" href="#" aria-label="Выйти из личного кабинета">Выйти</a>
           </li>
           <li class="user-navigation__item user-navigation__item--footer user-navigation__item--footer-compare">
-            <a class="user-navigation__link--footer user-navigation__link--footer-compare" href="#">Сравнить</a>
+            <a class="user-navigation__link--footer user-navigation__link--footer-compare" href="#" aria-label="Сравнить товары">Сравнить</a>
           </li>
           <li class="user-navigation__item user-navigation__item--footer user-navigation__item--footer-basket">
-            <a class="user-navigation__link--footer user-navigation__link--footer-basket" href="#">Корзина</a>
+            <a class="user-navigation__link--footer user-navigation__link--footer-basket" href="#" ria-label="Перейти в корзину">Корзина</a>
           </li>
         </ul>
       </div>
@@ -301,7 +298,7 @@
           <li class="menu__item"><a class="menu__link" href="#">Гарантия</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
         </ul>
-        <p class="footer__phone">Тел. :+7(495)495-95-95</p>
+        <p class="footer__phone">Тел.: +7(495)495-95-95</p>
       </div>
 
       <div class="footer__bottom">
