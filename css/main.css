@@ -412,7 +412,7 @@ a {
 .slider {
   position: relative;
   min-height: 410px;
-  margin-bottom: 70px;
+  margin-bottom: 0px;
 }
 
 .wrapper--slide {
@@ -429,11 +429,10 @@ a {
           align-items: stretch;
   -ms-flex-line-pack: stretch;
     align-content: stretch;
-  position: absolute;
+  position: relative;
   top: -110px;
   left: 0;
   width: 1160px;
-  min-width: 1040px;
 }
 
 .slide-1 {
@@ -615,7 +614,7 @@ a {
 .slide__table {
   margin-left: 1px;
   margin-top: -2px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   border-collapse: collapse;
 }
 
@@ -642,13 +641,22 @@ a {
   border: none;
 }
 
+.table__cell {
+  width: 139px;
+}
+
+.table__row th:nth-child(1),
+.table__row td:nth-child(3) {
+  width: 160px;
+}
+
 .slider__buttons {
   display: inline-block;
   vertical-align: middle;
   position: absolute;
   min-width: 60px;
   right: 83px;
-  bottom: 170px;
+  top: 215px;
   font-size: 0;
   z-index: 9;
 }
@@ -686,16 +694,8 @@ a {
   background: rgba(255, 255, 255, 1);
 }
 
-.table__cell {
-  width: 139px;
-}
-
-.table__row th:nth-child(1),
-.table__row td:nth-child(3) {
-  width: 160px;
-}
-
 .main-catalog {
+  margin-top: -40px;
   margin-bottom: 181px;
 }
 
@@ -807,7 +807,7 @@ a {
 }
 
 .services {
-  height: 288px;
+  min-height: 288px;
   margin: 0;
   margin-bottom: 95px;
   background-color: rgba(229, 229, 229, 1);
@@ -815,10 +815,11 @@ a {
 
 .services .container {
   position: relative;
+  min-height: 288px;
 }
 
 .container--services {
-  position: absolute;
+  position: relative;
   top: -20px;
   width: 1160px;
 }
@@ -923,7 +924,7 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
 }
