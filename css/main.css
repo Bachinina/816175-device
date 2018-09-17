@@ -543,7 +543,7 @@ a {
 .slide__comment {
   display: block;
   width: 480px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -568,7 +568,7 @@ a {
 .slide__button {
   max-width: 370px;
   margin-left: 3px;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
   word-wrap: break-word;
 }
 
@@ -578,7 +578,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-width: 220px;
-  height: 40px;
+  min-height: 40px;
   padding: 0 5px;
 
   font-family: "Gilroy", "Arial", sans-serif;
@@ -616,14 +616,13 @@ a {
 }
 
 .slide__table {
-  margin-left: 1px;
   margin-top: -2px;
   margin-bottom: 20px;
   border-collapse: collapse;
 }
 
 .slide__table th {
-  padding-top: 3px;
+  padding-top: 0px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 13px;
@@ -699,15 +698,16 @@ a {
 }
 
 .main-catalog {
-  margin-top: -70px;
-  margin-bottom: 181px;
+  margin-top: -71px;
+  margin-bottom: 180px;
 }
 
 .main-catalog__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-left: 0;
   padding-top: 1px;
   list-style: none;
@@ -996,13 +996,22 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   margin-bottom: 140px;
   padding-left: 0;
+}
+
+.logotypes__item {
+  margin-left: 40px;
+}
+
+.logotypes__item:nth-child(1) {
+  margin-left: 0;
 }
 
 .logotypes__img--hover {
@@ -1046,7 +1055,7 @@ a {
 .contacts__title {
   position: relative;
   margin-bottom: 45px;
-  margin-left: -2px;
+  margin-left: -3px;
   letter-spacing: 0.1px;
 }
 
@@ -1054,8 +1063,8 @@ a {
 .contacts__title:before {
   content: "";
   position: absolute;
-  top: -54px;
-  left: 0;
+  top: -52px;
+  left: 3px;
   width: 80px;
   height: 7px;
   background-color: rgba(0, 0, 0, 1);
@@ -1111,7 +1120,8 @@ a {
 
 .info__button,
 .contacts__button {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-width: 260px;
   margin-top: auto;
   margin-left: 2px;
@@ -1307,7 +1317,7 @@ a {
 }
 
 .footer {
-  margin-top: 63px;
+  margin-top: 61px;
   padding-top: 2px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
@@ -1546,6 +1556,8 @@ a {
 
 .social__item {
   font-size: 0;
+  margin-left: -3px;
+  margin-top: -2px;
 }
 
 .social__button {
@@ -1584,6 +1596,7 @@ a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-top: 5px;
 }
 
 .footer__copyright:hover {
@@ -1607,7 +1620,7 @@ a {
 }
 
 .breadcrumbs {
-  margin-bottom: 48px;
+  margin-bottom: 46px;
   padding-left: 0;
   list-style-type: none;
 
@@ -1662,7 +1675,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 1100px;
   margin: 0;
   margin-left: 60px;
@@ -1683,7 +1697,7 @@ a {
 
 .container--title {
   min-width: 268px;
-  height: 70px;
+  min-height: 70px;
   background-color: rgba(220, 220, 220, 1);
 }
 
@@ -1701,7 +1715,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 832px;
-  height: 70px;
+  min-height: 70px;
   background-color: rgba(238, 238, 238, 1);
 }
 
@@ -1732,6 +1746,9 @@ a {
   letter-spacing: 0.2px;
 }
 
+.sorting__item {
+  margin-right: 28px;
+}
 .sorting__link {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -1758,7 +1775,7 @@ a {
 }
 
 .gradation__link {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .gradation__link svg {
@@ -1795,7 +1812,7 @@ a {
 }
 
 .filters__form .filter:first-child {
-  margin-top: 68px;
+  margin-top: 69px;
 }
 
 .filter {
@@ -1810,9 +1827,13 @@ a {
   background-color: rgba(238, 238, 238, 1);
 }
 
+.filter-price {
+  margin-bottom: 4px;
+}
+
 .filter__title {
-  margin-top: 11px;
-  margin-left: -2px;
+  margin-top: 10px;
+  margin-left: -3px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -2146,7 +2167,7 @@ a {
 .paginator {
   width: 760px;
   height: 70px;
-  margin-bottom: 78px;
+  margin-bottom: 75px;
   background-color: rgba(235, 235, 235, 1);
 }
 
