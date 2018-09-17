@@ -682,7 +682,7 @@ a {
 }
 
 .slider__button:active:before,
-.active-button:before {
+.slider__button--active:before {
   content: "";
   position: absolute;
   top: 50%;
@@ -875,12 +875,17 @@ a {
   min-width: 160px;
 }
 
+.services__button:focus {
+  outline: 0;
+}
+
 .services__button:active {
   position: relative;
   color: rgba(247, 225, 135, 1);
   background-color: rgba(0, 0, 0, 1);
   -webkit-transition: 0s;
   transition: 0s;
+  outline: 0;
 }
 
 .services__button:active:after {
@@ -894,18 +899,19 @@ a {
   background-color: rgba(0, 0, 0, 1);
 }
 
-.active,
-.active:hover,
-.active:focus {
+.services__button--active,
+.services__button--active:hover,
+.services__button--active:focus {
   position: relative;
   color: rgba(247, 225, 135, 1);
   background: none;
   background-color: rgba(0, 0, 0, 1);
   -webkit-transition: 0s;
   transition: 0s;
+  outline: 0;
 }
 
-.active:after {
+.services__button--active:after {
   position: absolute;
   top: 0;
   right: -118px;
@@ -1018,11 +1024,13 @@ a {
   display: none;
 }
 
-.logotypes__link:hover .logotypes__img {
+.logotypes__link:hover .logotypes__img,
+.logotypes__link:focus .logotypes__img {
   display: none;
 }
 
-.logotypes__link:hover .logotypes__img--hover {
+.logotypes__link:hover .logotypes__img--hover,
+.logotypes__link:focus .logotypes__img--hover {
   display: block;
 }
 
@@ -1151,7 +1159,7 @@ a {
 
 .modal--feedback {
   position: fixed;
-  top: 200px;
+  top: 50px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -1163,6 +1171,7 @@ a {
   padding: 80px 100px;
   padding-bottom: 0px;
   background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
 
 .feedback__list {
@@ -1281,7 +1290,7 @@ a {
 
 .modal--map {
   position: fixed;
-  top: 220px;
+  top: 50px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -1305,6 +1314,7 @@ a {
   background: url("../img/close-button.svg");
   opacity: 0.5;
   cursor: pointer;
+  outline: 0;
 }
 
 .close__button:hover,
