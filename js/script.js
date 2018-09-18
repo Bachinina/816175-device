@@ -28,6 +28,10 @@
 
   var closeFeedback = feedback.querySelector(".close__button");
 
+  var formFeedback = feedback.querySelector(".feedback");
+
+  var emailFeedback = feedback.querySelector("[name=e-mail]");
+
   var linkMap = document.querySelector(".contacts__map");
 
   var map = document.querySelector(".modal--map");
@@ -99,12 +103,22 @@
 
   linkFeedback.addEventListener("click", function (evt) {
     evt.preventDefault();
-    feedback.classList.remove("visually-hidden")
+    feedback.classList.add("modal-emergence");
+    feedback.classList.remove("visually-hidden");
   });
 
   closeFeedback.addEventListener("click", function (evt) {
     evt.preventDefault();
+    feedback.classList.remove("modal-emergence");
+    feedback.classList.remove("modal-shake");
     feedback.classList.add("visually-hidden");
+  });
+
+  formFeedback.addEventListener("submit", function(evt){
+    if (!emailFeedback.value) {
+      evt.preventDefault();
+      feedback.classList.add("modal-shake");
+    }
   });
 
   linkMap.addEventListener("click", function(evt) {
