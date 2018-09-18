@@ -117,7 +117,9 @@
   formFeedback.addEventListener("submit", function(evt){
     if (!emailFeedback.value) {
       evt.preventDefault();
-      feedback.classList.add("modal-shake");
+      formFeedback.classList.remove("modal-shake");
+      formFeedback.offsetWidth = formFeedback.offsetWidth;
+      formFeedback.classList.add("modal-shake");
     }
   });
 
